@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Latar Belakang Minyak</title>
+    <style>
+        body {
+            /* Gunakan linear gradient untuk mencampur warna */
+            background: linear-gradient(45deg, #ff8a00, #ff008a, #00c6ff, #00ff8a);
+            background-size: 400% 400%;
+            animation: gradient 10s ease infinite;
+        }
+
+        /* Animasi perubahan warna latar belakang */
+        @keyframes gradient {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        /* Gaya untuk teks */
+        h1 {
+            color: white;
+            text-align: center;
+            padding: 50px;
+            font-size: 36px;
+        }/* Gaya umum di luar media query */
+body {
+    font-size: 16px;
+}
+
+/* Gaya untuk perangkat dengan lebar maksimum 768px */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px; /* Mengurangi ukuran teks untuk perangkat dengan layar kecil */
+    }
+
+    .menu {
+        display: none; /* Menyembunyikan elemen menu pada perangkat mobile */
+    }
+}
+
+    </style><meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <h1>Selamat Datang di Situs Kami</h1>
+</body>
+</html>
